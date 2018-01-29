@@ -9,6 +9,13 @@ function Pet(name, age, type, size, image, description) {
   this.adopted = false;
 }
 
+// function(petsArray, searchArray) {
+//   if (this.type = true) {
+//     var typeArray = petTypeSort(petsArray, searchArray);
+//   } else if
+//
+// }
+
 function petTypeSort(petsArray, searchArray) {
   var sortedArray = [];
   for (var i = 0; i < petsArray.length; i++) {
@@ -59,6 +66,17 @@ function petNotAdoptedSort(petsArray) {
   }
   return sortedArray;
 }
+
+function petArrayFilter(array1, array2) {
+  var filteredArray = [];
+  for (var i = 0; i < array1.length; i++) {
+    if (array2.includes(array1[i])) {
+      filteredArray.push(array1[i]);
+    }
+  }
+  return filteredArray;
+}
+
 
 
 
