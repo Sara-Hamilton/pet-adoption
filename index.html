@@ -5,24 +5,95 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Fredoka+One" rel="stylesheet">
     <title>We Got Pets!</title>
   </head>
   <body>
     <div class=container>
-      <div class="jumbotron">
-        <h1>We Got Pets!</h1>
+      <div class="row">
+        <div class="jumbotron">
+          <h1>We Got Pets!</h1>
+        </div>
       </div>
-    <form id=pets>
-      <div class="form-group">
-        <select class="form-control" id="type">
-          <option>Select Preference</option>
-          <option>Dogs</option>
-          <option>Cats</option>
-          <option>Birds</option>
-          <option>Other</option>
-        </select>
+      <div class="row">
+          <div class="col-md-6">
+            <div class="well">
+              <form id="petSearch">
+                <h2>Find your new friend!</h2>
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" name="name" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="type">
+                    <option>Select Preference</option>
+                    <option>Dogs</option>
+                    <option>Cats</option>
+                    <option>Birds</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="age">Age:</label>
+                  <input type="text" name="age" class="form-control" id="age">
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="size">
+                    <option>Select Size</option>
+                    <option>Less than 10lbs</option>
+                    <option>11-25lbs</option>
+                    <option>26-50lbs</option>
+                    <option>over 50lbs</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="description">Description:</label>
+                  <input type="text" name="description" class="form-control" id="description">
+                </div>
+              </form>
+          </div>
+        </div>
+      <form id=newPet>
+        <div class="col-md-6">
+          <div class="well">
+            <h2>Put up a pet for adoption</h2>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" name="name" class="form-control" id="newName">
+            </div>
+            <div class="form-group">
+              <select class="form-control" id="newType">
+                <option>Select Preference</option>
+                <option>Dogs</option>
+                <option>Cats</option>
+                <option>Birds</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="age">Age:</label>
+              <input type="text" name="age" class="form-control" id="newAge">
+            </div>
+            <div class="form-group">
+              <select class="form-control" id="size">
+                <option>Select Size</option>
+                <option>Less than 10lbs</option>
+                <option>11-25lbs</option>
+                <option>26-50lbs</option>
+                <option>over 50lbs</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="description">Description:</label>
+              <input type="text" name="description" class="form-control" id="newDescription">
+            </div>
+          </form>
+        </div>
       </div>
-    </form>
     </div>
+      <div class="well">
+        <h2>Fluffy muffin</h2>
+        <p id="descriptionDisplay"></p>
+   </div>
   </body>
 </html>
