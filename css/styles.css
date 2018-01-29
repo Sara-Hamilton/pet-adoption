@@ -41,4 +41,86 @@
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.show {
+  display: block;
+}
+.petRoller{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 35em;
+}
+.petImage{
+
+  width: 300px;
+  height: 200px;
+}
+
+.form-group {
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  margin-top: 15px;
+  opacity: .80;
+}
+
+body {
+  background-image: url(../img/dog1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Fredoka One', cursive;
+}
+
+.well {
+  opacity: .80;
+
+}
+
+.petType {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.ageRange {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.size {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+h2 {
+  text-align: center;
+}
+
+
+ .sidenav {
+   height: 100%; /* Full-height: remove this if you want "auto" height */
+   width: 160px; /* Set the width of the sidebar */
+   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+   z-index: 1; /* Stay on top */
+   top: 0; /* Stay at the top */
+   left: 0;
+   background-color: #111; /* Black */
+   overflow-x: hidden; /* Disable horizontal scroll */
+   padding-top: 20px;
+ }
+
+ .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+  }
