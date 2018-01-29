@@ -1,0 +1,26 @@
+.form-group {
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  margin-top: 15px;
+  opacity: .80;
+}
+
+body {
+  background-image: url(../img/dog1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Fredoka One', cursive;
+}
+
+.well {
+  opacity: .80;
+
+}
+
+h2 {
+  text-align: center;
+}
