@@ -21,10 +21,6 @@
               <form id="petSearch">
                 <h2>Find your new friend!</h2>
                 <div class="form-group">
-                  <label for="name">Name:</label>
-                  <input type="text" name="name" class="form-control" id="name">
-                </div>
-                <div class="form-group">
                   <select class="form-control" id="type">
                     <option>Select Preference</option>
                     <option>Dogs</option>
@@ -32,6 +28,10 @@
                     <option>Birds</option>
                     <option>Other</option>
                   </select>
+                </div>
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" name="name" class="form-control" id="name">
                 </div>
                 <div class="form-group">
                   <label for="age">Age:</label>
@@ -91,9 +91,25 @@
         </div>
       </div>
     </div>
-      <div class="well">
-        <h2>Fluffy muffin</h2>
-        <p id="descriptionDisplay"></p>
+    <div class="well">
+    <div class="row">
+
+
+
+      <div class="col-md-8">
+        <img class="petImage" src="img/puppy1.png" alt="cute puppy">
+      </div>
+      <div class="col-md-4">
+          <h2 id="nameDisplay">Fluffy muffin</h2>
+          <ul class="aboutPet">
+            <li>Name: </li>
+            <li>Age: </li>
+            <li>Name: </li>
+            <li>Name: </li>
+          <p id="descriptionDisplay">Fluffy is a great pet. She loves to lick your face. Bring tissues.</p>
+        </div>
+      </div>
+    </div>
    </div>
   </body>
 </html>
