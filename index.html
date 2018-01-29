@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title></title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title></title>
+</head>
+
+<body>
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <div class="formContainer">
+    <form class="valueAdder">
+      <input type="text" id="subjectAdded" placeholder="subject">
+      <!-- <input type="text" id="nameAdded"> -->
+      <button type="button" id="addBttn"></button>
+    </form>
+  </div>
+  <div class="selectorList">
+    <select id="selectorList">
+    </select>
+  </div>
+</body>
+
 </html>
