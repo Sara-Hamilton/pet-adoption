@@ -6,7 +6,7 @@
 
 ## Description
 
-_{This website allows users to choose a per to adopt. }_
+_This website allows users to choose a pet to adopt._
 
 ## Setup/Installation Requirements
 
