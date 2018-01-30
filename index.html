@@ -1,103 +1,123 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Fredoka+One" rel="stylesheet">
-    <title>We Got Pets!</title>
-  </head>
-  <body>
-    <div class=container>
-      <div class="sidenav">
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
-        <a href="#">How to Adopt</a>
-        <a href="#">Sponsor a Pet</a>
+
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Fredoka+One" rel="stylesheet">
+  <title>We Got Pets!</title>
+</head>
+
+<body>
+  <div class=container>
+
+    <div class="sidenav">
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+      <a href="#">How to Adopt</a>
+      <a href="#">Sponsor a Pet</a>
+    </div>
+
+    <div class="row">
+      <div class="jumbotron">
+        <h1>We Got Pets!</h1>
       </div>
-      <div class="row">
-        <div class="jumbotron">
-          <h1>We Got Pets!</h1>
-        </div>
-      </div>
-      <div class="row">
-          <div class="col-md-6">
-            <div class="well">
-              <form id="petSearch">
-                <h2>Find your new friend!</h2>
-                  <legend>Pet type</legend>
-                  <div class="petType">
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="well">
+          <form id="petSearch">
+            <h2>Find your new friend!</h2>
+            <legend>Pet type</legend>
 
+            <div class="petType">
+              <label for="dog">Dogs</label>
+              <input type="checkbox" name="type" id="dog" value="dog">
+            </div>
+            <div class="petType">
+              <label for="cat">Cats</label>
+              <input type="checkbox" name="type" id="cat" value="cat">
+            </div>
+            <div class="petType">
+              <label for="bird">Birds</label><input type="checkbox" name="type" id="bird" value="bird">
+            </div>
+            <div class="petType">
+              <label for="other">Other</label><input type="checkbox" name="type" id="other" value="other">
+            </div>
+            <div class="petType">
+              <label for="noPreference">No Preference</label><input type="checkbox" name="type" id="noPreference" value="noPreference">
+            </div>
 
-                    <label for="dog">Dogs</label>
-                    <input type="checkbox" class="type" id="dog" value="dog">
-                  </div>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" name="name" class="form-control" id="name">
+            </div>
 
-                  <div class="petType">
-                    <label for="cat">Cats</label>
-                    <input type="checkbox" class="type" id="cat" value="cat">
-                  </div>
-                  <div class="petType">
-                    <label for="bird">Birds</label><input type="checkbox"
-                    class="type" id="bird" value="bird">
-                  </div>
-                  <div class="petType">
-                    <label for="other">Other</label><input type="checkbox" class="type" id="other" value="other">
-                  </div>
-                  <div class="petType">
-                    <label for="noPreference">No Preference</label><input type="checkbox" class="type" id="noPreference" value="noPreference">
-                  </div>
+            <div class="form-group">
+              <legend>Age</legend>
+              <div class="ageRange">
+                <label for="age"> < 1 yr </label><input type="checkbox" class="age" id="1" value="1">
+              </div>
 
-                <div class="form-group">
-                  <label for="name">Name:</label>
-                  <input type="text" name="name" class="form-control" id="name">
-                </div>
+              <div class="ageRange">
+                <label for="age"> 1 to 5 yrs </label><input type="checkbox" class="age" id="5" value="5">
+              </div>
 
-                <div class="form-group">
-                  <legend>Age</legend>
-                  <div class="ageRange">
-                    <label for="age"> < 1 yr </label><input type="checkbox" class="age" id="1" value="1">
-                  </div>
+              <div class="ageRange">
+                <label for="age"> 6 yrs and older </label><input type="checkbox" class="age" id="6" value="6">
+              </div>
 
-                  <div class="ageRange">
-                    <label for="age"> 1 to 5 yrs </label><input type="checkbox" class="age" id="5" value="5">
-                  </div>
+              <div class="ageRange">
+                <label for="noAge">No Preference </label><input type="checkbox" class="age" id="noAge" value="noAge">
+              </div>
+            </div>
 
-                  <div class="ageRange">
-                    <label for="age"> 6 yrs and older </label><input type="checkbox" class="age" id="6" value="6">
-                  </div>
+            <div class="form-group">
+              <legend>Size</legend>
+              <div class="size">
+                <label for="size">Small</label><input type="checkbox" name="size" id="small" value="small">
+              </div>
+              <div class="size">
+                <label for="size">Medium</label><input type="checkbox" name="size" id="medium" value="medium">
+              </div>
+              <div class="size">
+                <label for="size">Large</label><input type="checkbox" name="size" id="large" value="large">
+              </div>
+              <div class="size">
+                <label for="size">no preference</label><input type="checkbox" name="size" id="none" value="Clifford">
 
-                  <div class="ageRange">
-                    <label for="noAge">No Preference </label><input type="checkbox" class="age" id="noAge" value="noAge">
-                  </div>
-                </div>
+              </div>
+            </div>
 
-                <div class="form-group">
-                  <legend>Size</legend>
-                  <div class="size">
-                    <label for="size">Small</label><input type="checkbox" id="small" value="small">
-                  </div>
-                  <div class="size">
-                  <label for="size">Medium</label><input type="checkbox" id="medium" value="medium">
-                  </div>
-                  <div class="size">
-                  <label for="size">Large</label><input type="checkbox"  id="large" value="large">
-                </div>
-                <div class="size">
+            <div class="form-group">
+
+              <legend>Size</legend>
+              <div class="size">
+                <label for="size">Small</label><input type="checkbox" id="small" value="small">
+              </div>
+              <div class="size">
+                <label for="size">Medium</label><input type="checkbox" id="medium" value="medium">
+              </div>
+              <div class="size">
+                <label for="size">Large</label><input type="checkbox" id="large" value="large">
+              </div>
+              <div class="size">
                 <label for="size">no preferance</label><input type="checkbox" id="none" value="no preferance">
               </div>
-              </div>
+            </div>
+            <div class="form-group">
 
-              <div class="form-group">
-                  <label for="description">Description:</label>
-                  <input type="text" name="description" class="form-control" id="description">
-                </div>
-                <button type="submit" class="btn btn-primary" id="searchButton">Search for your new friend!</button>
-              </form>
-          </div>
+              <label for="description">Description:</label>
+              <input type="text" name="description" class="form-control" id="description">
+            </div>
+            <button type="submit" class="btn btn-primary" id="searchButton">Search for your new friend!</button>
+          </form>
         </div>
-      <form id=newPet>
+      </div>
+
+      <form id="newPet">
         <div class="col-md-6">
           <div class="well">
             <h2>Put up a pet for adoption</h2>
@@ -107,11 +127,11 @@
             </div>
             <div class="form-group">
               <select class="form-control" id="newType">
-                <option>Select Preference</option>
-                <option>Dogs</option>
-                <option>Cats</option>
-                <option>Birds</option>
-                <option>Other</option>
+                <option>Select Type of Pet</option>
+                <option>dog</option>
+                <option>cat</option>
+                <option>bird</option>
+                <option>other</option>
               </select>
             </div>
             <div class="form-group">
@@ -119,46 +139,34 @@
               <input type="text" name="age" class="form-control" id="newAge">
             </div>
             <div class="form-group">
-              <select class="form-control" id="size">
+              <select class="form-control" id="newSize">
                 <option>Select Size</option>
-                <option>Less than 10lbs</option>
-                <option>11-25lbs</option>
-                <option>26-50lbs</option>
-                <option>over 50lbs</option>
+                <option>small</option>
+                <option>medium</option>
+                <option>large</option>
+                <option>Clifford</option>
               </select>
             </div>
             <div class="form-group">
               <label for="description">Description:</label>
               <input type="text" name="description" class="form-control" id="newDescription">
             </div>
-              <button type="submit" class="btn btn-warning" id="addButton">Add a pet!</button>
-          </form>
+            <button type="submit" class="btn btn-warning" id="addButton">Add a pet!</button>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
     <div class="well">
     <div class="row">
-
-
-<div id="petDiv">
-  <div class="petRoller">
-      <div class="col-md-8">
-        <img class="petImage" src="img/puppy1.png" alt="cute puppy">
-      </div>
-      <div class="col-md-4">
-          <h2 id="nameDisplay">Fluffy muffin</h2>
-          <ul class="aboutPet">
-            <li>Age: 8 months</li>
-            <li>Size: Small</li>
-            <li>Available: Yes</li>
-          </ul>
-          <p id="descriptionDisplay">Description: Fluffy is a great pet. She loves to lick your face. Bring tissues.</p>
-        </div>
-      </div>
-      </div>
-    </div>
-   </div>
- </div>
+      <div id="petDiv">
+        <div class="petRoller">
+            <div class="col-md-8">
+              <img class="petImage" src="img/puppy1.png" alt="cute puppy">
+              </div>
+            </div>
+          </div>
+       </div>
+     </div>
 
 
    <div class="dropdown">
@@ -180,5 +188,6 @@
      <select id="selectorList">
      </select>
    </div>
-  </body>
+  </div>
+</body>
 </html>
